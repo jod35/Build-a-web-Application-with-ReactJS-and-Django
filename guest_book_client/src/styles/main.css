@@ -1,0 +1,135 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(7,43,80);
+}
+.header{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    font-size: 30px;
+    color: white;
+}
+.add-btn{
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(7,43,80);
+}
+.add-section{
+    margin-top: 10px;
+}
+.posts{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centerText{
+    font-size: 40px;
+    color: white;
+}
+.modal{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+.modal-not-visible{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.308);
+    display: none;
+}
+.form{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    height: 500px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.form-header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.form-header-text{
+    font-size: 30px;
+}
+.close-btn{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(7,43,80);
+    margin-top: 10px;
+}
+label{
+    font-size: 20px;
+}
+.form-group{
+    padding: 20px;
+}
+.form-control{
+    width: 100%;
+    padding: 15px;
+}
+.btn{
+    padding: 20px;
+    background-color: rgb(7,43,80);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.post-list{
+    padding:20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.note{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 1.2s;
+    min-width: 25%;
+    min-height: 25%;
+    margin: 15px;
+    overflow: hidden;
+}
+.note:hover{
+    transform: scale(1.1);
+}
+.note-header{
+    display: flex;
+    justify-content: space-between;
+}
+.note-title{
+    font-size: 20px;
+    color: rgb(7,43,80);
+}
+.close{
+    text-decoration: none;
+    color: rgb(7,43,80);
+}
+
+@media (max-width:700px){
+    .form{
+        width: 80%;
+    }
+    .note{
+        width:80%;
+    }
+
+}
